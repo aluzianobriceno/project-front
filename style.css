@@ -26,7 +26,6 @@ button {
     font-size: 14px;
     color: white;
     align-items: center;
-    display: flex;
     justify-content: center;
     /* font-style: Segoe UI; */
 }
@@ -71,10 +70,132 @@ button.btn-home{
     text-align: center;
 }
 
-section {
+section#secao1 {
     background-image: url("fundo_1.png");
     height: 592px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+section#secao2 {
+    /* height: 400px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+p.texto{
+    font-size: 15px;
+    color: #737373;
+    text-align: center;
+}
+
+h2.titulo{
+    font-size: 24px;
+    color: #2571B7;
+}
+
+section#secao3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 27px;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-bottom: 45px;
+}
+
+.cards {
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#secao3 img {
+    justify-content: center;
+    margin-left: 18px;
+}
+
+.card-azul {
+    background-color: #0072C6;
+    height: 124px;
+    margin-bottom: 15px;
+}
+.card-azul-escuro {
+    background-color: #2C5898;
+    height: 124px;
+    margin-bottom: 15px;
+}
+.card-verde {
+    background-color: #207245;
+    height: 124px;
+    margin-bottom: 15px;
+}
+.card-laranja {
+    background-color: #CB4A32;
+    height: 124px;
+    margin-bottom: 15px;
+}
+.card-violeta {
+    background-color: #733781;
+    height: 124px;
+    margin-bottom: 15px;
+}
+.card-azul-claro {
+    background-color: #00AFF0;
+    height: 124px;
+    margin-bottom: 15px;
+}
+.card-text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 21px;
+}
+.card-text p {
+    font-size: 12px;
+    margin-top: 6px;
+}
+.card-text p.titulo{
+    font-size: 24px;
+    margin-top: 21px;
+    margin-bottom: 0px;
+}
+
+section#secao6 {
+    background-image: url("fundo_2.png");
+    height: 224px;
+    /* width: 360px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+footer {
+    padding: 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p{
+    width: 202px;
+    height: 16px;
+    color: #B4B4B4;
+    text-align: center;
 }
