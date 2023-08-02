@@ -9,7 +9,6 @@ nav {
     display: flex;
     align-items: center;
 }
-
 div.navbar {
     max-width: 1200px;
     margin: 0 auto;
@@ -19,7 +18,6 @@ div.navbar {
     align-items: center;
     padding: 0 20px;
 }
-
 button {
     display: flex;
     background-color: transparent;
@@ -27,19 +25,20 @@ button {
     color: white;
     align-items: center;
     justify-content: center;
+    border-style: solid;
 }
-
 button.menu img{
     height: 24px;
     width: 24px;
-    
+    border: 0px;
 }
-
 button.btn-nav{
     height: 26px;
     width: 113px;
     background-color: #002050;
+    border: 0px;
 }
+
 div.texto {
     display: flex;
     flex-direction: column;
@@ -59,12 +58,6 @@ h2.subtitulo {
     font-size: 24px;
 }
 
-div{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 button.btn-home{
     background-color: #00A4EF;
     font-size: 21px;
@@ -72,15 +65,17 @@ button.btn-home{
     width: 188px;
     text-align: center;
     margin-bottom: 100px;
+    border: 0px;
 }
 
 section#secao1 {
     display: flex;
     background-image: url("/assets/img/fundo_1.png");
-    background-position: cover;
+    background-size: cover;
     background-position: center center;
     justify-content: space-between;
     flex-direction: column;
+    align-items: center;
 }
 .logo {
     margin-bottom: 27px;
@@ -102,6 +97,7 @@ p.texto{
 }
 
 h2.titulo{
+    text-align: center;
     font-size: 24px;
     color: #2571B7;
 }
@@ -116,7 +112,6 @@ section#secao3 {
 }
 
 .cards {
-    height: 124px;
     margin-bottom: 15px;
 }
 
@@ -170,10 +165,9 @@ section#secao4 {
     margin-left: 18px;
     margin-right: 18px;
 }
-
 .box {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
     margin-bottom: 21px;
     margin-top: 21px;
 }
@@ -211,7 +205,12 @@ section#secao4 {
 .yellow .title {
     color: #FFB900;
 }
-.blocks {
+
+section#secao5 {
+    display: flex;
+    flex-direction: column;
+}
+#secao5 .blocks {
     margin-top: 33px;
     margin-bottom: 60px;
     margin-left: 18px;
@@ -219,6 +218,7 @@ section#secao4 {
 }
 .block {
     border: 3px solid #DEDEDE;
+    text-align: center;
 }
 .block .title {
     color: #F25022;
@@ -226,8 +226,8 @@ section#secao4 {
 .block .text {
     color: #737373;
     size: 12px;
-    text-align: center;
 }
+
 #secao6 {
     display: flex;
     background-image: url(/assets/img/fundo_2.png);
@@ -244,6 +244,12 @@ section#secao4 {
     margin-left: 18px;
     margin-right: 18px;
 }
+section#secao7 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 18px;
+    margin-right: 18px;
+}
 
 #secao7 .text {
     font-size: 15px;
@@ -251,8 +257,10 @@ section#secao4 {
     text-align: center;
     margin-top: 60px;
     margin-bottom: 27px;
-    margin-left: 18px;
-    margin-right: 18px;
+}
+.form {
+    display: flex;
+    justify-content: center;    
 }
 .campo-form {
     display: flex;
@@ -268,11 +276,17 @@ section#secao4 {
 .campo-form input {
     height: 44px;
     width: 288px;
+    font-size: 15px;
+    border: 0px;
 }
 fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #E6E6E6;
     border: 0px;
     height: 535px;
+    width: 324px;
 }
 fieldset button {
     height: 52px;
@@ -280,25 +294,102 @@ fieldset button {
     background-color: #00A4EF;
     margin-top: 36px;
     font-size: 21px;
+    border: 0px;
 }
 
 footer {
-    padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 24px;
 }
 .footer-container {
+    display: flex;
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .footer-img {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-direction: row;
 }
 footer p{
-    width: 202px;
-    height: 16px;
+    font-size: 12px;
     color: #B4B4B4;
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    section#secao1 {
+        display: flex;
+        align-items: flex-start;
+    }
+    div.texto {
+        margin-left: 120px;
+        align-items: flex-start;
+    }
+    button.btn-home {
+        margin-left: 120px;
+    }
+    .logo img {
+        margin:auto;
+
+    }
+    section#secao3 {
+        display: flex;
+        flex-direction: column;
+        /* margin-top: 27px;
+        margin-left: 18px;
+        margin-right: 18px;
+        margin-bottom: 45px; */
+    }
+    section#secao4 {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+    #secao4 .boxes{
+        display: flex;
+        text-align: center;
+    }
+    .box .text {
+        text-align: center;
+    }
+    .box-button {
+        display: flex;
+        justify-content: center;
+    }
+    .text-img {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    #secao5 {
+        margin: 0 50px;
+    }
+    #secao5 .blocks {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row
+    }
+    .campo-form label {
+        color: #737373;
+        font-size: 14px;
+        margin-top: 32px;
+        margin-bottom: 8px;
+    }
+    .campo-form input {
+        height: 56px;
+        width: 468px;
+        font-size: 20px;
+        border: 0px;
+    }
+    fieldset {
+        height: 722px;
+        width: 564px;
+    }
+    fieldset button {
+        height: 56px;
+        width: 468px;
+        margin-top: 48px;
+        font-size: 28px;
+    }
 }
