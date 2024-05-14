@@ -1,0 +1,246 @@
+@font-face {
+  font-family: 'Yantramanav';
+  src: url('../fonts/Yantramanav/Yantramanav-Regular.ttf') format('truetype');
+  /* Adicione outras variações (como bold, italic, etc.) se aplicável */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Yantramanav', sans-serif;
+
+}
+
+section#dobra1 {
+  padding: 35px 20px 35px 20px;
+  background: rgb(44, 44, 44);
+  background: radial-gradient(circle, rgba(44, 44, 44, 1) 0%, rgba(44, 44, 44, 1) 50%, rgba(26, 26, 26, 1) 100%);
+}
+
+.hero-texts {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-quadrado {
+  position: relative;
+  text-align: start;
+  padding-top: 40px;
+}
+
+.titulo-quadrado:before {
+  content: "";
+  position: absolute;
+  width: 105px;
+  height: 100.23px;
+  border: solid 1px #F89D24;
+  border-top-width: 0px;
+  bottom: 5px;
+}
+
+.dobra-title {
+  padding-bottom: 25px;
+}
+
+.dobra-title h1 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-size: 48px;
+  text-align: center;
+}
+
+h2 {
+  color: #B5B5B5;
+  font-size: 14px;
+  text-align: center;
+}
+
+button {
+  width: 225px;
+  height: 61px;
+}
+
+.tenho-interesse {
+  background-color: transparent;
+  border: solid 1px #FFFFFF;
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+
+.comprar-agora {
+  background-color: #F89D24;
+  border: solid 1px #F89D24;
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+}
+
+#dobra1 img {
+  width: 68px;
+  height: 56px;
+}
+
+section#dobra2 {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 35px 20px;
+  color: white;
+  background: rgb(44, 44, 44);
+  background: radial-gradient(circle, rgba(44, 44, 44, 1) 0%, rgba(44, 44, 44, 1) 50%, rgba(26, 26, 26, 1) 100%);
+}
+
+.dobra-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.dobra-card {
+  border: 1px solid #6E6E6E;
+  border-radius: 5px;
+  width: 258px;
+  height: 255px;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.dobra-card-title {
+  color: #F89D24;
+}
+
+.dobra-card-text {
+  color: #6E6E6E;
+}
+
+.dobra-card img {
+  height: 96px;
+  width: 99px;
+}
+
+section#dobra3 {
+  background-image: url(../assets/img/dobra3.png);
+}
+
+.dobra3-brilhar {
+  background-image: url(../assets/img/dobra3.png);
+  padding: 35px 25px 35px 25px;
+}
+
+.dobra3-curso {
+  background-color: #F89D24;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 35px 60px 35px 60px;
+}
+
+.fazer-curso {
+  background-color: #FFFFFF;
+  border: solid 1px #FFFFFF;
+  border-radius: 5px;
+  color: #F89D24;
+}
+
+section#dobra4 {
+  padding: 0px 20px 35px 20px;
+  background-image: url(../assets/img/dobra4.png);
+  background-size: cover;
+}
+
+.drop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accordion {
+  background-color: #686868;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 10px 15px 10px 15px;
+  width: 320px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  font-weight: bold;
+}
+
+.accordion::after {
+  content: '\25bc';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active::after {
+  content: "\25b2";
+}
+
+.panel p {
+  width: 100%;
+}
+
+.panel {
+  padding: 0 18px;
+  text-align: left;
+  background-color: #262626;
+  width: 320px;
+  border: none;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  font-size: 16px;
+}
+
+footer {
+  background: rgb(44, 44, 44);
+  background: radial-gradient(circle, rgba(44, 44, 44, 1) 0%, rgba(44, 44, 44, 1) 50%, rgba(26, 26, 26, 1) 100%);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p {
+  color: white;
+}
